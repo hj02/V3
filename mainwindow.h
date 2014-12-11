@@ -15,6 +15,12 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+
+    void on_rbFemaleS_clicked();
+    void on_rbMaleS_clicked();
+    void on_rbBothS_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

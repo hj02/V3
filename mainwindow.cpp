@@ -12,3 +12,22 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_rbFemaleS_clicked()
+{
+    ui->pbAddS->setEnabled(true);
+}
+
+void MainWindow::on_rbMaleS_clicked()
+{
+    ui->pbAddS->setEnabled(true);
+}
+
+void MainWindow::on_rbBothS_clicked()
+{
+  ui->pbAddS->setEnabled(false);
+}
+
+
+
+
