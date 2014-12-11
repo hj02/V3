@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "scientist.h"
+#include "scienceservice.h"
+#include <string>
+
+
+
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +26,9 @@ private slots:
     void on_rbFemaleS_clicked();
     void on_rbMaleS_clicked();
     void on_rbBothS_clicked();
+
+
+    void on_pbAddC_clicked();
 
 private:
     Ui::MainWindow *ui;

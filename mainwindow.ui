@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SCIENTISTS</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tbMenu">
@@ -33,6 +33,9 @@
      <bool>false</bool>
     </property>
     <widget class="QWidget" name="tbScientist_2">
+     <property name="focusPolicy">
+      <enum>Qt::TabFocus</enum>
+     </property>
      <attribute name="title">
       <string>Scientists</string>
      </attribute>
@@ -101,8 +104,8 @@
      <widget class="QPushButton" name="pbAddS">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>140</y>
+        <x>40</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -114,8 +117,8 @@
      <widget class="QPushButton" name="pbFindS">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>140</y>
+        <x>150</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -199,8 +202,8 @@
      <widget class="QPushButton" name="pbSortS">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>140</y>
+        <x>260</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -556,7 +559,14 @@
     <addaction name="menuNew"/>
     <addaction name="menuFind"/>
    </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -595,6 +605,11 @@
   <action name="actionBy_name">
    <property name="text">
     <string>By name</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
    </property>
   </action>
  </widget>
