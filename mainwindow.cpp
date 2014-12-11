@@ -28,7 +28,8 @@ void MainWindow::on_rbBothS_clicked()
   ui->pbAddS->setEnabled(false);
 }
 
-void MainWindow::on_pbAddC_clicked()
+
+void MainWindow::on_pbAddS_clicked()
 {
     Scientist additionalScientist = Scientist();
 
@@ -52,14 +53,44 @@ void MainWindow::on_pbAddC_clicked()
     if(ui->rbMaleS){
         GENDER = "Male";
     }else GENDER = "Female";
-
     additionalScientist.gender=GENDER;
+
+//    ScienceService.addScientist(additionalScientist);
 
     ui->txtNameS->clear();
     ui->edtDobS->clear();
     ui->edtDodS->clear();
 }
 
+void MainWindow::on_pbAddC_clicked()
+{
+    Computer additionalComputer = Computer();
+
+    std::string BRAND = "";
+    BRAND = ui->edtBrand->text().toStdString();
+    additionalComputer.brand = BRAND;
+
+    std::string TYPE = "";
+    TYPE = ui->edtType->text().toStdString();
+    additionalComputer.type = TYPE;
+
+    std::string YEAR = "";
+    YEAR = ui->edtYear->text().toStdString();
+    additionalComputer.year = YEAR;
+
+    std::string BUILT;
+
+    if(ui->checkBox_2){
+        BUILT = "Yes";
+    }else BUILT = "No";
+    additionalComputer.built = BUILT;
+
+    //scienceService.addComputer(additionalComputer);
+
+    ui->edtBrand->clear();
+    ui->edtType->clear();
+    ui->edtYear->clear();
+}
 
 
 
