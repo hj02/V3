@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
@@ -614,6 +614,33 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tbMenu</tabstop>
+  <tabstop>txtNameS</tabstop>
+  <tabstop>edtDobS</tabstop>
+  <tabstop>edtDodS</tabstop>
+  <tabstop>rbFemaleS</tabstop>
+  <tabstop>rbMaleS</tabstop>
+  <tabstop>rbBothS</tabstop>
+  <tabstop>pbAddS</tabstop>
+  <tabstop>pbFindS</tabstop>
+  <tabstop>cmbSortS</tabstop>
+  <tabstop>rbAscS</tabstop>
+  <tabstop>rbDescS</tabstop>
+  <tabstop>pbSortS</tabstop>
+  <tabstop>colScientists</tabstop>
+  <tabstop>edtBrand</tabstop>
+  <tabstop>edtType</tabstop>
+  <tabstop>edtYear</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>pbAddC</tabstop>
+  <tabstop>pbFindC</tabstop>
+  <tabstop>cmbComputers</tabstop>
+  <tabstop>rbAscC</tabstop>
+  <tabstop>rbDescC</tabstop>
+  <tabstop>colComputers</tabstop>
+  <tabstop>pbSortC</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

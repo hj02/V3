@@ -26,9 +26,8 @@ private slots:
     void on_rbFemaleS_clicked();
     void on_rbMaleS_clicked();
     void on_rbBothS_clicked();
-
-
     void on_pbAddC_clicked();
+
 
 private:
     Ui::MainWindow *ui;
