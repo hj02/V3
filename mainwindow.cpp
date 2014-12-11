@@ -1,16 +1,23 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "scienceservice.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    scienceService = ScienceService();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::start()
+{
+    //scienceService.open();
 }
 
 void MainWindow::on_rbFemaleS_clicked()
@@ -55,7 +62,7 @@ void MainWindow::on_pbAddS_clicked()
     }else GENDER = "Female";
     additionalScientist.gender=GENDER;
 
-//    ScienceService.addScientist(additionalScientist);
+    scienceService.addScientist(additionalScientist);
 
     ui->txtNameS->clear();
     ui->edtDobS->clear();
@@ -85,7 +92,7 @@ void MainWindow::on_pbAddC_clicked()
     }else BUILT = "No";
     additionalComputer.built = BUILT;
 
-    //scienceService.addComputer(additionalComputer);
+    scienceService.addComputer(additionalComputer);
 
     ui->edtBrand->clear();
     ui->edtType->clear();

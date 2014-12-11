@@ -30,8 +30,11 @@ private slots:
     void on_pbAddC_clicked();
 
 
+
 private:
     Ui::MainWindow *ui;
+    void start();
+    ScienceService scienceService;
 };
 
 #endif // MAINWINDOW_H
