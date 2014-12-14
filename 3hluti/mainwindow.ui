@@ -6,25 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>621</height>
+    <width>620</width>
+    <height>620</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SCIENTISTS</string>
+   <string>SCIENTISTS &amp; COMPUTERS</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTabWidget" name="tbMenu">
+   <widget class="QTabWidget" name="tbFind">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>10</x>
       <y>0</y>
-      <width>581</width>
+      <width>580</width>
       <height>561</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="documentMode">
      <bool>true</bool>
@@ -32,7 +32,7 @@
     <property name="tabsClosable">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="tbScientist_2">
+    <widget class="QWidget" name="tbScientist">
      <property name="focusPolicy">
       <enum>Qt::TabFocus</enum>
      </property>
@@ -56,7 +56,7 @@
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>30</y>
+        <y>40</y>
         <width>53</width>
         <height>16</height>
        </rect>
@@ -69,7 +69,7 @@
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>60</y>
+        <y>70</y>
         <width>41</width>
         <height>16</height>
        </rect>
@@ -78,11 +78,11 @@
        <string>Born:</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="txtNameS">
+     <widget class="QLineEdit" name="edtNameS">
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>30</y>
+        <y>40</y>
         <width>251</width>
         <height>22</height>
        </rect>
@@ -95,7 +95,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>181</y>
+        <y>180</y>
         <width>561</width>
         <height>351</height>
        </rect>
@@ -104,7 +104,7 @@
      <widget class="QPushButton" name="pbAddS">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>240</x>
         <y>130</y>
         <width>93</width>
         <height>28</height>
@@ -112,19 +112,6 @@
       </property>
       <property name="text">
        <string>Add</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pbFindS">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>130</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Find</string>
       </property>
      </widget>
      <widget class="QGroupBox" name="grbSortS">
@@ -144,7 +131,7 @@
         <rect>
          <x>10</x>
          <y>30</y>
-         <width>131</width>
+         <width>181</width>
          <height>22</height>
         </rect>
        </property>
@@ -173,7 +160,7 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>60</y>
+         <y>80</y>
          <width>95</width>
          <height>20</height>
         </rect>
@@ -188,8 +175,8 @@
       <widget class="QRadioButton" name="rbDescS">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>90</y>
+         <x>100</x>
+         <y>80</y>
          <width>95</width>
          <height>20</height>
         </rect>
@@ -198,25 +185,25 @@
         <string>Descending</string>
        </property>
       </widget>
-     </widget>
-     <widget class="QPushButton" name="pbSortS">
-      <property name="geometry">
-       <rect>
-        <x>260</x>
-        <y>130</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Sort</string>
-      </property>
+      <widget class="QPushButton" name="pbSortS">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>120</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sort</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QLineEdit" name="edtDobS">
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>60</y>
+        <y>70</y>
         <width>80</width>
         <height>22</height>
        </rect>
@@ -229,7 +216,7 @@
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>90</y>
+        <y>100</y>
         <width>80</width>
         <height>22</height>
        </rect>
@@ -247,17 +234,29 @@
         <height>161</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="title">
-       <string/>
+       <string>Add a new Scientist</string>
       </property>
       <widget class="QRadioButton" name="rbFemaleS">
        <property name="geometry">
         <rect>
          <x>180</x>
-         <y>50</y>
+         <y>60</y>
          <width>70</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="text">
         <string>Female</string>
@@ -270,10 +269,16 @@
        <property name="geometry">
         <rect>
          <x>250</x>
-         <y>50</y>
+         <y>60</y>
          <width>60</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="text">
         <string>Male</string>
@@ -283,10 +288,16 @@
        <property name="geometry">
         <rect>
          <x>180</x>
-         <y>80</y>
+         <y>90</y>
          <width>70</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
        </property>
        <property name="text">
         <string>Both</string>
@@ -297,12 +308,10 @@
      <zorder>lblDodS</zorder>
      <zorder>lblNameS</zorder>
      <zorder>lblDobS</zorder>
-     <zorder>txtNameS</zorder>
+     <zorder>edtNameS</zorder>
      <zorder>colScientists</zorder>
      <zorder>pbAddS</zorder>
-     <zorder>pbFindS</zorder>
      <zorder>grbSortS</zorder>
-     <zorder>pbSortS</zorder>
      <zorder>edtDobS</zorder>
      <zorder>edtDodS</zorder>
     </widget>
@@ -314,7 +323,7 @@
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>30</y>
+        <y>40</y>
         <width>53</width>
         <height>16</height>
        </rect>
@@ -327,7 +336,7 @@
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>30</y>
+        <y>40</y>
         <width>251</width>
         <height>22</height>
        </rect>
@@ -337,7 +346,7 @@
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>60</y>
+        <y>70</y>
         <width>53</width>
         <height>16</height>
        </rect>
@@ -350,7 +359,7 @@
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>90</y>
+        <y>100</y>
         <width>113</width>
         <height>22</height>
        </rect>
@@ -360,7 +369,7 @@
       <property name="geometry">
        <rect>
         <x>80</x>
-        <y>60</y>
+        <y>70</y>
         <width>251</width>
         <height>22</height>
        </rect>
@@ -370,7 +379,7 @@
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>90</y>
+        <y>100</y>
         <width>81</width>
         <height>20</height>
        </rect>
@@ -386,7 +395,7 @@
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>90</y>
+        <y>100</y>
         <width>53</width>
         <height>16</height>
        </rect>
@@ -400,7 +409,7 @@
        <rect>
         <x>20</x>
         <y>180</y>
-        <width>621</width>
+        <width>561</width>
         <height>351</height>
        </rect>
       </property>
@@ -408,8 +417,8 @@
      <widget class="QPushButton" name="pbAddC">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>140</y>
+        <x>240</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -418,26 +427,13 @@
        <string>Add</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pbFindC">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>140</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Find</string>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="grpSortC">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>30</y>
-        <width>191</width>
-        <height>131</height>
+        <x>380</x>
+        <y>10</y>
+        <width>201</width>
+        <height>161</height>
        </rect>
       </property>
       <property name="title">
@@ -446,9 +442,9 @@
       <widget class="QComboBox" name="cmbComputers">
        <property name="geometry">
         <rect>
-         <x>20</x>
+         <x>10</x>
          <y>30</y>
-         <width>131</width>
+         <width>181</width>
          <height>22</height>
         </rect>
        </property>
@@ -476,8 +472,8 @@
       <widget class="QRadioButton" name="rbAscC">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>70</y>
+         <x>10</x>
+         <y>80</y>
          <width>95</width>
          <height>20</height>
         </rect>
@@ -492,8 +488,8 @@
       <widget class="QRadioButton" name="rbDescC">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>100</y>
+         <x>100</x>
+         <y>80</y>
          <width>95</width>
          <height>20</height>
         </rect>
@@ -502,25 +498,435 @@
         <string>Descending</string>
        </property>
       </widget>
+      <widget class="QPushButton" name="pbSortC">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>120</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sort</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QPushButton" name="pbSortC">
+     <widget class="QGroupBox" name="groupBox_3">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>140</y>
+        <x>20</x>
+        <y>10</y>
+        <width>351</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Add a new Computer</string>
+      </property>
+     </widget>
+     <zorder>groupBox_3</zorder>
+     <zorder>lblBrand</zorder>
+     <zorder>edtBrand</zorder>
+     <zorder>lblType</zorder>
+     <zorder>edtYear</zorder>
+     <zorder>edtType</zorder>
+     <zorder>checkBox_2</zorder>
+     <zorder>lblYear</zorder>
+     <zorder>colComputers</zorder>
+     <zorder>pbAddC</zorder>
+     <zorder>grpSortC</zorder>
+    </widget>
+    <widget class="QWidget" name="tbConnect">
+     <attribute name="title">
+      <string>Connect</string>
+     </attribute>
+     <widget class="QLabel" name="lblConnectSwithC">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>300</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Connect a Scientist with a Computer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInputS">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>130</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input the Scientist ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>60</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInputC">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>130</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input the Computer ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
         <width>93</width>
         <height>28</height>
        </rect>
       </property>
       <property name="text">
-       <string>Sort</string>
+       <string>Connect</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblConnectComputerScientist">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>300</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Connect a Computer with a Scientist</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputComputer2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>130</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input the Computer ID:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>280</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>280</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>240</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="InputScientist2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>130</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input the Scientist ID:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblComputern_no1">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>150</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>with Computer no: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblScientist_connect">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>170</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblScientistComputer">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>You have now connected Scientist no: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblComputer_no1">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>150</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblScientist_no2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>330</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblComputer_no2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>330</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>with Computer no: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblComputerScientist">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>330</y>
+        <width>221</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>You have now connected Scientist no: </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblScientist_no1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>30</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tbConnect_2">
+    <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Connect</string>
+      <string>Find</string>
      </attribute>
+     <widget class="QColumnView" name="colFind">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>561</width>
+        <height>351</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>70</y>
+        <width>80</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search term:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>70</y>
+        <width>300</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>561</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="lblHeader">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>561</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Find a Scientist or a Computer</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>95</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Scientist</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>100</y>
+         <width>95</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Computer</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>100</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </widget>
+     <zorder>groupBox_2</zorder>
+     <zorder>colFind</zorder>
+     <zorder>label</zorder>
+     <zorder>lineEdit</zorder>
     </widget>
    </widget>
   </widget>
@@ -529,7 +935,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>603</width>
+     <width>620</width>
      <height>26</height>
     </rect>
    </property>
@@ -557,7 +963,6 @@
      </widget>
      <addaction name="menuScientist"/>
      <addaction name="actionComputer_2"/>
-     <addaction name="actionConnection_2"/>
     </widget>
     <addaction name="menuNew"/>
     <addaction name="menuFind"/>
@@ -618,15 +1023,14 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
-  <tabstop>tbMenu</tabstop>
-  <tabstop>txtNameS</tabstop>
+  <tabstop>tbFind</tabstop>
+  <tabstop>edtNameS</tabstop>
   <tabstop>edtDobS</tabstop>
   <tabstop>edtDodS</tabstop>
   <tabstop>rbFemaleS</tabstop>
   <tabstop>rbMaleS</tabstop>
   <tabstop>rbBothS</tabstop>
   <tabstop>pbAddS</tabstop>
-  <tabstop>pbFindS</tabstop>
   <tabstop>cmbSortS</tabstop>
   <tabstop>rbAscS</tabstop>
   <tabstop>rbDescS</tabstop>
@@ -637,7 +1041,6 @@
   <tabstop>edtYear</tabstop>
   <tabstop>checkBox_2</tabstop>
   <tabstop>pbAddC</tabstop>
-  <tabstop>pbFindC</tabstop>
   <tabstop>cmbComputers</tabstop>
   <tabstop>rbAscC</tabstop>
   <tabstop>rbDescC</tabstop>

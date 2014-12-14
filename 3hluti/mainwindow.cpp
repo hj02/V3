@@ -41,7 +41,7 @@ void MainWindow::on_pbAddS_clicked()
     Scientist additionalScientist = Scientist();
 
     std::string NAME = "";
-    NAME = ui->txtNameS->text().toStdString();
+    NAME = ui->edtNameS->text().toStdString();
     additionalScientist.name = NAME;
 
     std::string DOB = "";
@@ -64,7 +64,7 @@ void MainWindow::on_pbAddS_clicked()
 
     scienceService.addScientist(additionalScientist);
 
-    ui->txtNameS->clear();
+    ui->edtNameS->clear();
     ui->edtDobS->clear();
     ui->edtDodS->clear();
 }
